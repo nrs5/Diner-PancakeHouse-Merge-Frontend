@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Merged Menu</title>
-    <link href="merged.css" rel="stylesheet"/>
- </head>
- <body>
+    <title>The merger</title>
+    <link href="index.css" rel="stylesheet"/>
+  </head>
+  <body>
     <div id="menu" class="container">
-        <h1>Merged Menu</h1>
+        <h1>Diner-PancakHouse Menu</h1>
     </div>
 
     <script>
@@ -27,7 +27,7 @@
         let menu = await getTheMenu();
         for (let menuItem of menu) {
           let div = document.createElement("div");
-          div.className = "menu-item"; // Corrected from 'class' to 'className'
+          div.class = "menu-item";
           div.innerHTML = `
                <div class="menu-item">
                 <div class="item-name">${menuItem.name}</div>
@@ -39,5 +39,5 @@
         }
       }
     </script>
- </body>
+  </body>
 </html>
